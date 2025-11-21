@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Add New Item</title>
+</head>
+<body>
+
+<form action="">
+
+    <fieldset>
+        <legend>General Info</legend>
+
+        <p>
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName" name="itemName" size="50" maxlength="500" />
+        </p>
+
+        <p>
+            <label for="description">Description</label><br>
+            <textarea id="description" name="description" cols="55" rows="7"></textarea>
+        </p>
+
+        <p>
+            <label for="coverImage">Cover Image</label>
+            <input type="file" id="coverImage" name="coverImage">
+        </p>
+
+        <p>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option>Not Specified</option>
+                <option>Electronics</option>
+                <option>Household</option>
+                <option>Food</option>
+            </select>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Misc.</legend>
+
+        <p>
+            <label for="inventory">Inventory Amount</label>
+            <input type="number" id="inventory" name="inventory">
+        </p>
+
+        <p>
+            <label for="listPrice">List Price</label>
+            <input type="number" id="listPrice" name="listPrice" step="0.01">
+        </p>
+
+        <p><strong>Available Stores</strong><br>
+            <input type="checkbox" id="storeBkk" name="stores" value="Bangkok">
+            <label for="storeBkk">Bangkok</label>
+
+            <input type="checkbox" id="storePat" name="stores" value="Pattaya">
+            <label for="storePat">Pattaya</label>
+
+            <input type="checkbox" id="storePhu" name="stores" value="Phuket">
+            <label for="storePhu">Phuket</label>
+        </p>
+
+        <p><strong>Active Status</strong><br>
+            <input type="radio" id="active" name="status" value="active">
+            <label for="active">Active</label>
+
+            <input type="radio" id="inactive" name="status" value="inactive">
+            <label for="inactive">Inactive</label>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Staff</legend>
+
+        <p>
+            <label for="staffEmail">Staff Email</label>
+            <input type="email" id="staffEmail" name="staffEmail">
+            <button type="button">...</button>
+        </p>
+    </fieldset>
+
+    <button type="submit">Submit Form</button>
+
+</form>
+
+</body>
+</html>
